@@ -1,0 +1,137 @@
+/* Estilos básicos para o corpo do site */
+body {
+    font-family: 'LEMON MILK', Arial, sans-serif;
+    background-color: #bc00bc;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho do site */
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-image: url('stars.png');
+    background-size: auto;
+    background-position: top left;
+}
+
+/* Define o tamanho máximo da logo */
+#logo {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+    background-image: url('star100.png');
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Estilos para o formulário de login */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    color: yellow;
+}
+
+/* Estilos para os campos do formulário */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background-color: #333;
+    color: yellow;
+    font-size: 16px;
+}
+
+form input::placeholder {
+    color: #ccc;
+}
+
+/* Estilos para o botão de login */
+form button {
+    width: 100%;
+    background-color: #bc00bc;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #993399;
+}
+
+/* Estilos para links adicionais */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o rodapé do site */
+footer {
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 70px;
+    /* Espaçamento interno */
+    background-color: black;
+    /* Cor de fundo do rodapé */
+    background-image: url(stars.png);
+    /*imagem do rodapé*/
+}
+
+/* Estilos para os links no rodapé */
+footer a {
+    color: yellow;
+    /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    margin: 0 10px;
+    /* Espaçamento entre os links */
+    font-size: 20px;
+    /*tamanho do texto do rodapé*/
+}
+
+/* Estilos para os links ao passar o mouse por cima */
+footer a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
