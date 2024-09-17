@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.png" alt="Logo do Site">
+    </header>
+    <main>
+        <form action="login.php" method="POST">
+            <h2>Login</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            
+            <button type="submit">Entrar</button>
+            
+            <div class="form-footer">
+                <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <!-- Links para redes sociais -->
+        <a href="https://github.com/PopMoonGames" target="_blank">GitHub</a> |
+        <a href="https://instagram.com/popmoongames" target="_blank">Instagram</a> |
+        <a href="sobre.html" target="_blank">Sobre</a>
+    </footer>
+</body>
+</html>

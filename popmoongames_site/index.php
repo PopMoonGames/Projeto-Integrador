@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// Verificar se o usuário está autenticado
+if (!isset($_SESSION['usuario'])) {
+    // Redirecionar para a página de login se não estiver autenticado
+    header("Location: login.html");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,7 +16,7 @@
     <meta charset="UTF-8">
     <!-- Configurações iniciais do documento -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="pop" href="pop.png">
+    <link rel="icon" href="pop.png">
     <title>PopMoonGames</title>
     <!-- Importa a fonte Lemon Milk do Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LEMON+MILK:wght@400;700&display=swap">
@@ -17,10 +28,10 @@
     <header>
         <img src="logo.png" alt="Logo do Site" id="logo">
         
-        <!-- Botões de Login e Cadastro -->
+        <!-- Mostrar nome do usuário e link de logout -->
         <div class="header-buttons">
-            <button onclick="window.location.href='login.html'">Login</button>
-            <button onclick="window.location.href='cadastro.html'">Cadastro</button>
+            <span>Bem-vindo, <?php echo htmlspecialchars($_SESSION['usuario']); ?>!</span>
+            <button onclick="window.location.href='logout.php'">Sair</button>
         </div>
     </header>
     
@@ -44,7 +55,7 @@
             <!-- Jogo da Memoria Deadpool -->
             <div class="game">
                 <!-- Imagem do jogo -->
-                <img src="memorypool.png" alt="deadrine">
+                <img src="memorypool.png" alt="Memory Pool">
                 <!-- Nome do jogo -->
                 <h2>MemoryPool</h2>
                 <!-- Descrição do jogo -->
@@ -56,7 +67,7 @@
             <!-- Jogo Pop-Man -->
             <div class="game">
                 <!-- Imagem do jogo -->
-                <img src="popman.png" alt="POPMAN">
+                <img src="popman.png" alt="Popman">
                 <!-- Nome do jogo -->
                 <h2>Popman</h2>
                 <!-- Descrição do jogo -->
@@ -66,7 +77,6 @@
                 <!-- Botão para abrir o jogo -->
                 <button onclick="window.open('https://popman-ileao19s-projects.vercel.app/', '_blank')">Jogar</button>
             </div>
-
         </section>
     </main>
 
